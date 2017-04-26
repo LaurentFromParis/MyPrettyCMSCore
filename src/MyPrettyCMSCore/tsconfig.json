@@ -1,19 +1,21 @@
 {
   "compilerOptions": {
-    "noImplicitAny": false,
-    "noEmitOnError": true,
-    "removeComments": false,
-    "sourceMap": true,
-    "target": "es5",
-
-    //add this to compile app component
+    "diagnostics": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "module": "system",
-    "moduleResolution": "node"
+    "lib": [ "es2015", "dom" ],
+    "listFiles": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "outDir": "wwwroot",
+    "removeComments": false,
+    "rootDir": "wwwroot",
+    "sourceMap": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "target": "es5"
   },
   "exclude": [
-    "node_modules",
-    "wwwroot/lib"
+    "node_modules"
   ]
 }

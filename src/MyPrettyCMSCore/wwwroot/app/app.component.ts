@@ -1,7 +1,16 @@
-﻿import {Component} from 'angular2/core';
+import { Component } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
-    selector: 'core-app',
-    template: '<h3>Welcome to .NET Core 1.0 + MVC6 + Angular 2</h3>'
+    selector: 'my-app',
+    templateUrl: '/partial/appComponent'
 })
-export class AppComponent { }
+export class AppComponent {
+    public constructor(private titleService: Title) { }
+
+    angularClientSideData = 'Angular';
+
+    public setTitle(newTitle: string) {
+        this.titleService.setTitle(newTitle);
+    }
+}
