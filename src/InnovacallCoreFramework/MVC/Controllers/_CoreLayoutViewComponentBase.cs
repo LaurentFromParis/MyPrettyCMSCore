@@ -1,10 +1,12 @@
-﻿using System;
+﻿using InnovacallCoreFramework.MVC.Models;
 using Microsoft.AspNetCore.Mvc;
-using InnovacallCoreFramework.MVC.Models;
+using System;
+using System.Collections.Generic;
+using System.Text;
 
 namespace InnovacallCoreFramework.MVC.Controllers
 {
-    public class _CoreLayoutViewControllerBase<T> : Controller where T : _CoreLayoutViewModelBase
+    public class _CoreLayoutViewComponentBase<T> : ViewComponent where T : _CoreLayoutViewComponentModelBase
     {
         #region  Variables membres
         /// <summary>
@@ -30,7 +32,7 @@ namespace InnovacallCoreFramework.MVC.Controllers
             }
         }
 
-        public _CoreLayoutViewControllerBase()
+        public _CoreLayoutViewComponentBase()
         {
             this.StrongViewData = Activator.CreateInstance<T>();
         }

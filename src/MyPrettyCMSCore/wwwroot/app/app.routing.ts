@@ -1,8 +1,9 @@
 ﻿
 import { Routes, RouterModule } from '@angular/router';
 
-import { AboutComponent } from './about.component';
+//import data from './scriptsg/commonData.js';
 import { IndexComponent } from './index.component';
+import { AboutComponent } from './about.component';
 import { ContactComponent } from './contact.component';
 
 const appRoutes: Routes = [
@@ -14,4 +15,4 @@ const appRoutes: Routes = [
 
 export const routing = RouterModule.forRoot(appRoutes);
 
-export const routedComponents = [AboutComponent, IndexComponent, ContactComponent];
+export const routedComponents = [IndexComponent, AboutComponent, ContactComponent];

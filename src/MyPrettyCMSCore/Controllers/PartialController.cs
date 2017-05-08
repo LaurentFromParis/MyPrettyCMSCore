@@ -11,5 +11,7 @@ namespace MyPrettyCMSCore.Controllers
         public IActionResult ContactComponent() => PartialView();
 
         public IActionResult IndexComponent() => PartialView();
+
+        public IActionResult DynamicContentComponent() => PartialView();
     }
 }
