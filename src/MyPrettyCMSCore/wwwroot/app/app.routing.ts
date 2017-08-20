@@ -6,6 +6,8 @@ import { IndexComponent } from './index.component';
 import { AboutComponent } from './about.component';
 import { ContactComponent } from './contact.component';
 
+//See https://angular.io/docs/ts/latest/api/router/index/Router-class.html#!#resetConfig-anchor
+
 const appRoutes: Routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
     { path: 'home', component: IndexComponent, data: { title: 'Home' } },

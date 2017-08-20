@@ -4,6 +4,7 @@ var router_1 = require("@angular/router");
 var index_component_1 = require("./index.component");
 var about_component_1 = require("./about.component");
 var contact_component_1 = require("./contact.component");
+//See https://angular.io/docs/ts/latest/api/router/index/Router-class.html#!#resetConfig-anchor
 var appRoutes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
     { path: 'home', component: index_component_1.IndexComponent, data: { title: 'Home' } },

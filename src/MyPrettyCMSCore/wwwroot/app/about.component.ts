@@ -1,4 +1,5 @@
-﻿import { Component } from '@angular/core';
+﻿//Ne sera pas utilisé
+import { Component } from '@angular/core';
 
 @Component({
     selector: 'my-about',
